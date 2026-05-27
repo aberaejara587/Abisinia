@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Crypto App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <div>
+        <h1>Mini Crypto</h1>
+        <p>Telegram Mini App</p>
+      </div>
+
+      <button class="wallet-btn">
+        Connect Wallet
+      </button>
+    </div>
+
+    <!-- Balance Card -->
+    <div class="balance-card">
+      <h2>Total Points</h2>
+      <h1 id="points">2500</h1>
+
+      <div class="balance-buttons">
+        <button onclick="claimReward()">
+          Claim Reward
+        </button>
+
+        <button onclick="inviteFriends()">
+          Invite
+        </button>
+      </div>
+    </div>
+
+    <!-- Tasks -->
+    <div class="section">
+      <div class="section-title">
+        <h2>Tasks</h2>
+        <span>Earn Rewards</span>
+      </div>
+
+      <div class="task-card">
+        <div>
+          <h3>Join Telegram Channel</h3>
+          <p>+100 Points</p>
+        </div>
+
+        <button onclick="completeTask(100)">
+          Start
+        </button>
+      </div>
+
+      <div class="task-card">
+        <div>
+          <h3>Follow On X</h3>
+          <p>+50 Points</p>
+        </div>
+
+        <button onclick="completeTask(50)">
+          Start
+        </button>
+      </div>
+    </div>
+
+    <!-- Games -->
+    <div class="section">
+      <div class="section-title">
+        <h2>Games</h2>
+        <span>Play & Win</span>
+      </div>
+
+      <div class="games">
+
+        <div class="game-card">
+          <div class="emoji">🎮</div>
+          <h3>Lucky Game</h3>
+          <button onclick="playGame()">Play</button>
+        </div>
+
+        <div class="game-card">
+          <div class="emoji">🎁</div>
+          <h3>Mystery Box</h3>
+          <button onclick="playGame()">Open</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Leaderboard -->
+    <div class="section">
+      <div class="section-title">
+        <h2>Leaderboard</h2>
+        <span>Top Players</span>
+      </div>
+
+      <div class="leaderboard-card">
+        <h3>#1 Abera</h3>
+        <p>12,500 Points</p>
+      </div>
+
+      <div class="leaderboard-card">
+        <h3>#2 Roba</h3>
+        <p>11,200 Points</p>
+      </div>
+
+      <div class="leaderboard-card">
+        <h3>#3 Miki</h3>
+        <p>9,800 Points</p>
+      </div>
+
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <div>🏠<span>Home</span></div>
+      <div>🎮<span>Games</span></div>
+      <div>💰<span>Wallet</span></div>
+      <div>🏆<span>Rank</span></div>
+      <div>👥<span>Invite</span></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
